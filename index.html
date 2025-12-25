@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元旦晚会抽奖活动</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 标题区域 -->
+        <header class="header">
+            <h1 class="title">🎉 元旦晚会抽奖活动 🎉</h1>
+            <div class="subtitle">新年新气象，好运来抽奖！</div>
+        </header>
+
+        <!-- 抽奖显示区域 -->
+        <main class="main-content">
+            <!-- 当前抽奖结果 -->
+            <div class="lottery-display">
+                <div class="lottery-number" id="lotteryNumber">
+                    <span class="placeholder">?</span>
+                </div>
+                <div class="lottery-status" id="lotteryStatus">点击开始抽奖</div>
+            </div>
+
+            <!-- 抽奖按钮 -->
+            <div class="lottery-controls">
+                <button class="lottery-btn" id="startLottery" onclick="startLottery()">
+                    🎊 开始抽奖 🎊
+                </button>
+                <button class="reset-btn" id="resetLottery" onclick="resetLottery()">
+                    🔄 重新开始
+                </button>
+            </div>
+
+            <!-- 进度信息 -->
+            <div class="progress-info">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    已抽取: <span id="drawnCount">0</span> / 100 人
+                </div>
+            </div>
+
+            <!-- 已抽中名单 -->
+            <div class="drawn-list">
+                <h3>🏆 已抽中名单 🏆</h3>
+                <div class="drawn-numbers" id="drawnNumbers">
+                    <div class="empty-message">还没有人抽中，快来抽奖吧！</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="blessing">祝大家新年快乐，工作顺利！</div>
+        </footer>
+    </div>
+
+    <!-- 庆祝动画容器 -->
+    <div class="celebration" id="celebration"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
