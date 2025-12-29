@@ -188,10 +188,8 @@ function updateDrawnNumbersList() {
         return;
     }
     
-    // 按升序排序显示
-    const sortedNumbers = [...drawnNumbers].sort((a, b) => a - b);
-    
-    drawnNumbersContainer.innerHTML = sortedNumbers.map(number => 
+    // 按抽中顺序显示（不排序）
+    drawnNumbersContainer.innerHTML = drawnNumbers.map(number => 
         `<div class="drawn-number">${number}</div>`
     ).join('');
     
