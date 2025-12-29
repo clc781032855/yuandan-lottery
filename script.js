@@ -1,7 +1,7 @@
 // 全局变量
 let drawnNumbers = [];
 let isDrawing = false;
-const TOTAL_PARTICIPANTS = 100;
+const TOTAL_PARTICIPANTS = 105;
 
 // 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', function() {
