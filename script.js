@@ -71,7 +71,7 @@ function startLottery() {
     
     // 快速滚动效果
     let scrollCount = 0;
-    const maxScrollCount = 30;
+    const maxScrollCount = 8;
     const scrollInterval = setInterval(() => {
         // 随机显示号码
         const randomNumber = Math.floor(Math.random() * TOTAL_PARTICIPANTS) + 1;
@@ -100,9 +100,9 @@ function startLottery() {
                     startButton.textContent = '🎉 抽奖完成 🎉';
                     lotteryStatus.textContent = '🎊 所有号码已抽完！恭喜所有参与者！ 🎊';
                 }
-            }, 500);
+            }, 200);
         }
-    }, 100);
+    }, 50);
 }
 
 // 获取随机未使用的号码
